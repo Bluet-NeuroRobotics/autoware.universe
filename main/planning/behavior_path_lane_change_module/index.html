@@ -8529,6 +8529,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -8993,12 +8995,122 @@
       
       
         <label class="md-nav__link" for="__nav_8_6_8" id="__nav_8_6_8_label" tabindex="0">
-          Motion Velocity Smoother
+          Motion Velocity Planner
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_8_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          Motion Velocity Planner
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoware_motion_velocity_planner_node/" class="md-nav__link">
+        About Motion Velocity Planner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_6_8_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_6_8_2" id="__nav_8_6_8_2_label" tabindex="0">
+          Available Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_6_8_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_6_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Available Modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoware_motion_velocity_planner_out_of_lane_module/" class="md-nav__link">
+        Out of Lane
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_6_9" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_6_9" id="__nav_8_6_9_label" tabindex="0">
+          Motion Velocity Smoother
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_6_9">
           <span class="md-nav__icon md-icon"></span>
           Motion Velocity Smoother
         </label>
@@ -13308,7 +13420,7 @@ Computing candidate paths that assumes ego vehicle's slows down is performed by 
 <h4 id="objects-selection-and-classification">Objects selection and classification<a class="headerlink" href="#objects-selection-and-classification" title="Permanent link">#</a></h4>
 <p>First, we divide the target objects into obstacles in the target lane, obstacles in the current lane, and obstacles in other lanes. Target lane indicates the lane that the ego vehicle is going to reach after the lane change and current lane mean the current lane where the ego vehicle is following before the lane change. Other lanes are lanes that do not belong to the target and current lanes. The following picture describes objects on each lane. Note that users can remove objects either on current and other lanes from safety check by changing the flag, which are <code>check_objects_on_current_lanes</code> and <code>check_objects_on_other_lanes</code>.</p>
 <p><img alt="object lanes" src="images/lane_objects.drawio.svg"></p>
-<p>Furthermore, to change lanes behind a vehicle waiting at a traffic light, we skip the safety check for the stopping vehicles near the traffic light. The explanation for parked car detection is written in <a href="../behavior_path_avoidance_module/">documentation for avoidance module</a>.</p>
+<p>Furthermore, to change lanes behind a vehicle waiting at a traffic light, we skip the safety check for the stopping vehicles near the traffic light. The explanation for parked car detection is written in <a href="../behavior_path_avoidance_module/README.md">documentation for avoidance module</a>.</p>
 <p>The detection area for the target lane can be expanded beyond its original boundaries to enable detection of objects that are outside the target lane's limits.</p>
 <div align="center">
   <table>
